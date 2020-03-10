@@ -14,3 +14,7 @@ cat > ./result << EOL
   * five
 ### [other]
 EOL
+
+git add result
+git commit -m "🤖 API docs"
+git push --set-upstream https://${GH_PAT}@github.com/puria/action-docsify.git master
