@@ -27,19 +27,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: $GITHUB_WORKSPACE/docs/_media/script.sh
-      shell: bash
-      env:
-        GH_PATH: ${{ secrets.GH_PAT }}
-        ACTION_NAME: ${{ secrets.ACTION_NAME }}
-        ACTION_MAIL: ${{ secrets.ACTION_MAIL }}
 
-    - name: push
-      uses: github-actions-x/commit@v2.3
+    - uses: stefanzweifel/git-auto-commit-action@v4.1.0
       with:
-        github-token: ${{ secrets.GH_PAT }}
-        push-branch: 'master'
-        commit-message: ":robot: api doc update"
-        force-add: 'true'
-        files: $GITHUB_WORKSPACE/docs/_media/result
-        name: DOC BOT
-        email: puria@dyne.org
+        commit_message: ":robot: api doc update"
