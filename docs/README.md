@@ -2,7 +2,6 @@
 
 > An awesome project.
 
-## Welcome
 
 [filename](_media/result ':include :type=code :fragment=demo')
 
