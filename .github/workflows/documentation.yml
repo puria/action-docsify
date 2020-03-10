@@ -26,9 +26,9 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
+      run: $GITHUB_WORKSPACE/docs/_media/script.sh
       with:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: $GITHUB_WORKSPACE/docs/_media/script.sh
         shell: bash
         COMMIT_MESSAGE: ':memo: chore api sync'
         ONLY_DEFAULT_BRANCH: true
