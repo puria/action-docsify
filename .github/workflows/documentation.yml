@@ -33,12 +33,13 @@ jobs:
         ACTION_NAME: ${{ secrets.ACTION_NAME }}
         ACTION_MAIL: ${{ secrets.ACTION_MAIL }}
 
-    - name: Commit changes
-      uses: EndBug/add-and-commit@v4
+    - name: push
+      uses: github-actions-x/commit@v2.3
       with:
-        author_name: DOC BOT
-        author_email: puria@dyne.org
-        message: ":robot: api doc update"
-        add: "**/result"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        github-token: ${{ secrets.GH_PAT }}
+        push-branch: 'master'
+        commit-message: ":robot: api doc update"
+        force-add: 'true'
+        files: $GITHUB_WORKSPACE/docs/_media/result
+        name: DOC BOT
+        email: puria@dyne.org
