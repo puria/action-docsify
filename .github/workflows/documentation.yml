@@ -30,6 +30,8 @@ jobs:
       shell: bash
       env:
         GH_PATH: ${{ secrets.GH_PAT }}
+        ACTION_NAME: ${{ secrets.ACTION_NAME }}
+        ACTION_MAIL: ${{ secrets.ACTION_MAIL }}
 
 
 #     # Runs a set of commands using the runners shell
