@@ -1,4 +1,6 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash -l
+
+set -euo pipefail
 
 cat > ./result << EOL
   * zero
