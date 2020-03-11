@@ -1,6 +1,6 @@
 # Headline
 
-!> An awesome project.
+> An awesome project.
 
 
 [](_media/result ':include :fragment=demo :type=code')
