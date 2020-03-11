@@ -2,9 +2,7 @@
 
 set -euo pipefail
 
-MY_PATH="`dirname \"$0\"`"
-
-cat > "$MY_PATH/result" << EOL
+cat > "$GITHUB_WORKSPACE/docs/_media/result" << EOL
   * zero
 ### [demo]
   * one
