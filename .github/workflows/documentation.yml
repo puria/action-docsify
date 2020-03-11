@@ -33,10 +33,13 @@ jobs:
         commit_message: ":robot: api doc update"
   
     - uses: ludeeus/action-push@master
-      with:
+      env:
         ACTION_MAIL: "puria@dyne.org"
+        ACTION_BRANCH: "master"
+        ACTION_NAME: "DOC BOT"
         ACTION_MESSAGE: ":robot: api doc update"
-        GITHUB_TOKEN: $GH_PAT
+      with:
+        secrets: $GH_PAT
 
 #   env = {
 #     ACTION_MAIL = "octocat@octocat.org"
