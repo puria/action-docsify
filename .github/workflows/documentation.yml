@@ -31,3 +31,18 @@ jobs:
     - uses: stefanzweifel/git-auto-commit-action@v4.1.0
       with:
         commit_message: ":robot: api doc update"
+  
+    - uses: ludeeus/action-push@master
+      with:
+        ACTION_MAIL: "puria@dyne.org"
+        ACTION_MESSAGE: ":robot: api doc update"
+        GITHUB_TOKEN: $GH_PAT
+
+#   env = {
+#     ACTION_MAIL = "octocat@octocat.org"
+#     ACTION_NAME = "octocat"
+#     ACTION_BRANCH = "master"
+#     ACTION_MESSAGE = "Action commit"
+#   }
+#   secrets = ["GITHUB_TOKEN"]
+# }
