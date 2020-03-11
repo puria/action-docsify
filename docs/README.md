@@ -3,13 +3,13 @@
 > An awesome project.
 
 
-[filename](_media/result ':include :type=code :fragment=demo')
+[](_media/result ':include :fragment=demo :type=code')
 
 
 ---
 
 Let's see
 
-[filename](_media/result ':include :type=code :fragment=other')
+[](_media/result ':include :fragment=other')
 
 

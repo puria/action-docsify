@@ -2,7 +2,9 @@
 
 set -euo pipefail
 
-cat > ./result << EOL
+MY_PATH="`dirname \"$0\"`"
+
+cat > "$MY_PATH/result" << EOL
   * zero
 ### [demo]
   * one
